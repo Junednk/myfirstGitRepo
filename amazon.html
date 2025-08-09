@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./amazon.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://companieslogo.com/img/orig/AMZN_BIG.D-8fb0be81.png?t=1740113564" alt="" />
+        </div>
+        <div class="location">
+            <p class="firstparagraph">Deliver To</p>
+            <i class="fa-solid fa-location-dot"></i>india
+        </div>
+        <div class="searchbar">
+            <select name="" id="" class="selectoption">
+                <option value="">ALL</option>
+                <option value="">ALL</option>
+                <option value="">ALL</option>
+                <option value="">ALL</option>
+            </select>
+            <input class="searchinput" type="text" placeholder="Search Amazon" />
+
+            <div class="searchicon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <div class="language">
+            <p>Eng</p>
+            <i class="fa fa-flag" aria-hidden="true"></i>
+        </div>
+        <div class="signin">
+            <p>Hello, Signin</p>
+            <p>Accounts & Lists</p>
+        </div>
+        <div class="signin">
+            <p>Returns &</p>
+            <p>Orders</p>
+        </div>
+        <div class="cartsection">
+            <i class="fa-solid fa-cart-shopping"></i>Cart
+        </div>
+    </nav>
+
+
+    <title>Image Slider</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; margin: 0; }
+
+    .slider {
+      position: relative;
+      max-width: 1000px;
+      margin: auto;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .slides {
+      display: flex;
+      width: 1000px;
+    }
+
+    img {
+      width: 1000px;
+      vertical-align: middle;
+    }
+
+    .dots {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .dot {
+      height: 5px;
+      width: 60px;
+      margin: 0 5px;
+      background-color: orange;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active {
+      background-color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="slider">
+    <img class="slides" src="https://images-eu.ssl-images-amazon.com/images/G/31/Events/img25/Nimesh/AugART_8PM_PC_H1_v2_2x._CB804854772_.jpg" alt="Slide 1">
+    <img class="slides" src="https://images-eu.ssl-images-amazon.com/images/G/31/INSLGW/AugART25/sd_event_2x._CB804928678_.png" alt="Slide 2">
+    <img class="slides" src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/WLA/2025/AugART_25/GW/Unrec/D278613793_IN_WLA_AugART25_Gateway_Category-PC_Hero_3000x1200_Asin._CB805225484_.jpg" alt="Slide 3">
+  </div>
+
+  <div class="dots">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+
+  <script>
+    let index = 0;
+    showSlides();
+
+    function showSlides() {
+      const slides = document.getElementsByClassName("slides");
+      const dots = document.getElementsByClassName("dot");
+
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      index++;
+      if (index > slides.length) { index = 1 }    
+
+      for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+
+      slides[index - 1].style.display = "block";  
+      dots[index - 1].className += " active";
+      setTimeout(showSlides, 3000); // Change image every 3 seconds
+    }
+  </script>
+    <div class="cardsection">
+        <div class="card">
+            <h1 class="heading">Eelectronics</h1>
+            <div class="cardimage"
+                style="background-image: url('https://images-eu.ssl-images-amazon.com/images/G/31/img21/CEPC/Tablets/Hero/Associatess/PC_CC_758x60810.5x._SY304_CB804957162_.jpg');">
+             
+            </div>
+
+
+               <p class="seemore">
+                    <a href="https://www.amazon.in/">see more</a>
+                </p>
+        </div>
+        <div class="card">
+            <h1 class="heading">Gaming CPU</h1>
+            <div class="cardimage"
+                style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBARfwOqg3NirT91_RK8jeJYi2Swvjb4T5iw&s');">
+             
+            </div>
+               <p class="seemore">
+                    <a href="https://www.amazon.in/">see more</a>
+                </p>
+        </div>
+        <div class="card">
+            <h1 class="heading">Cushions & Pillows </h1>
+            <div class="cardimage"
+                style="background-image: url('https://m.media-amazon.com/images/I/41MwW+LtyaL._AC_UL480_FMwebp_QL65_.jpg');">
+             
+            </div>
+               <p class="seemore">
+                    <a href="https://www.amazon.in/">see more</a>
+                </p>
+        </div>
+        <div class="card">
+            <h1 class="heading">GYM kit</h1>
+            <div class="cardimage"
+                style="background-image: url('https://m.media-amazon.com/images/G/31/img23/Sports/December/Weights_benches_Store/Brandimage/Kore/440X330.jpg');">
+             
+            </div>
+               <p class="seemore">
+                    <a href="https://www.amazon.in/">see more</a>
+                </p>
+        </div>
+        <div class="card">
+            <h1 class="heading">smart phones</h1>
+            <div class="cardimage"
+                style="background-image: url('https://m.media-amazon.com/images/I/41CDymsLqvL._SX300_SY300_QL70_FMwebp_.jpg');">
+             
+            </div>
+               <p class="seemore">
+                    <a href="https://www.amazon.in/">see more</a>
+                </p>
+        </div>
+        <div class="card">
+            <h1 class="heading">Sports</h1>
+            <div class="cardimage"
+                style="background-image: url('https://m.media-amazon.com/images/I/51QsIn-sTAL.AC_SX250.jpg');">
+             
+            </div>
+               <p class="seemore">
+                    <a href="https://www.amazon.in/">see more</a>
+                </p>
+        </div>
+        <div class="card">
+            <h1 class="heading">Home Decor</h1>
+            <div class="cardimage"
+                style="background-image: url('https://m.media-amazon.com/images/I/813Kzy7rfqL._AC_UL480_FMwebp_QL65_.jpg');">
+             
+            </div>
+               <p class="seemore">
+                    <a href="https://www.amazon.in/">see more</a>
+                </p>
+        </div>
+        <div class="card">
+            <h1 class="heading">Kitchen essentials</h1>
+            <div class="cardimage"
+                style="background-image: url('https://m.media-amazon.com/images/I/41fDOzesUcL.AC_SX250.jpg');">
+             
+            </div>
+               <p class="seemore">
+                    <a href="https://www.amazon.in/">see more</a>
+                </p>
+        </div>
+        <div class="card">
+            <h1 class="heading">Furniture</h1>
+            <div class="cardimage"
+                style="background-image: url('https://m.media-amazon.com/images/G/31/IMG20/Furniture/2025/AugART25/Asset_29PC2.png');">
+             
+            </div>
+               <p class="seemore">
+                    <a href="https://www.amazon.in/">see more</a>
+                </p>
+        </div>
+        <div class="card">
+            <h1 class="heading">air cond</h1>
+            <div class="cardimage"
+                style="background-image: url('https://m.media-amazon.com/images/I/51Ov+jEqXNL._AC_UL480_QL65_.jpg');">
+             
+            </div>
+               <p class="seemore">
+                    <a href="https://www.amazon.in/">see more</a>
+                </p>
+        </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
